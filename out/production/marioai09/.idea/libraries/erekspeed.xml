@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="erekspeed">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/competition/icegic/erek/erekspeed.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
