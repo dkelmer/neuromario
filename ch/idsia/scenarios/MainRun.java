@@ -23,7 +23,7 @@ import competition.cig.sergeypolikarpov.SergeyPolikarpov_SimpleCyberNeuronAgent;
 import competition.cig.spencerschumann.SpencerSchumann_SlideRule;
 import competition.cig.andysloane.AndySloane_BestFirstAgent;
 import competition.cig.alexandrupaler.PalerAgent;
-import competition.cig.peterlawford.PeterLawford_SlowAgent;
+
 
 /**
  * Created by IntelliJ IDEA.
@@ -97,7 +97,6 @@ public class MainRun
 //            AgentsPool.addAgent(AgentsPool.load("competition/cig/matthewerickson/matthewerickson.xml"));
 //            AgentsPool.addAgent(AgentsPool.load("competition/icegic/erek/erekspeed.xml")); // out of memory exception
             AgentsPool.addAgent(new PalerAgent());
-            AgentsPool.addAgent(new PeterLawford_SlowAgent());
         }
     }
 
