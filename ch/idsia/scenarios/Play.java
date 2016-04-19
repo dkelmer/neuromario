@@ -41,7 +41,7 @@ public class Play {
 
     public static void main(String[] args) {
 
-        System.out.println(args[0]);
+
 
         EvaluationOptions options = new CmdLineOptions(args);
         Task task = new ProgressTask(options);
