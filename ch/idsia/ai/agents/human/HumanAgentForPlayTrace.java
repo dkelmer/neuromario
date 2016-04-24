@@ -22,7 +22,6 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     List<boolean[]> history = new ArrayList<boolean[]>();
     private boolean[] Action = null;
     private String Name = "HumanKeyboardAgent";
-    private int numRecords = 0;
 
     public HumanAgentForPlayTrace()
     {
@@ -39,34 +38,23 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     public boolean[] getAction(Environment observation)
     {
 
+
         byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2);
 
-        System.out.println("MARIO: ");
-        for (byte[] b : lvlSceneObs) {
-            System.out.println(Arrays.toString(b));
+        for(int i = 0; i < lvlSceneObs.length; i++){
+            for(int j = 0; j < lvlSceneObs[0].length; j++) {
+                System.out.print(lvlSceneObs[i][j]);
+                System.out.print(",");
+            }
         }
+        for(int i = 0; i < Action.length; i++) {
+            System.out.print(Action[i]);
+            if (i != Action.length-1) {
+                System.out.print(",");
+            }
+        }
+        System.out.println();
 
-//        System.out.println("LevelSceneObs: ");
-//        lvlSceneObs = observation.getLevelSceneObservation();
-//        for (byte[] b : lvlSceneObs) {
-//            System.out.println(Arrays.toString(b));
-//        }
-//
-//        System.out.println("EnemyObs: ");
-//        lvlSceneObs = observation.getEnemiesObservation();
-//        for (byte[] b : lvlSceneObs) {
-//            System.out.println(Arrays.toString(b));
-//        }
-//
-//        System.out.println("Combined");
-//        lvlSceneObs = observation.getMergedObservationZ(1,0);
-//        for (byte[] b : lvlSceneObs) {
-//            System.out.println(Arrays.toString(b));
-//        }
-
-        System.out.println("==============");
-
-        numRecords++;
         return Action;
     }
 
