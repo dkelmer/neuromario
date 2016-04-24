@@ -38,14 +38,34 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
 
     public boolean[] getAction(Environment observation)
     {
-        float[] enemiesPos = observation.getEnemiesFloatPos();
-        byte[][] lvlSceneObs = observation.getLevelSceneObservation();
-        if (numRecords < 10 || numRecords > 200) {
-            for (byte[] b : lvlSceneObs) {
-                System.out.println(Arrays.toString(b));
-            }
-            System.out.println("==============");
+
+        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2);
+
+        System.out.println("MARIO: ");
+        for (byte[] b : lvlSceneObs) {
+            System.out.println(Arrays.toString(b));
         }
+
+        System.out.println("LevelSceneObs: ");
+        lvlSceneObs = observation.getLevelSceneObservation();
+        for (byte[] b : lvlSceneObs) {
+            System.out.println(Arrays.toString(b));
+        }
+
+        System.out.println("EnemyObs: ");
+        lvlSceneObs = observation.getEnemiesObservation();
+        for (byte[] b : lvlSceneObs) {
+            System.out.println(Arrays.toString(b));
+        }
+
+        System.out.println("Combined");
+        lvlSceneObs = observation.getMergedObservationZ(1,0);
+        for (byte[] b : lvlSceneObs) {
+            System.out.println(Arrays.toString(b));
+        }
+        
+        System.out.println("==============");
+
         numRecords++;
         return Action;
     }
@@ -92,5 +112,27 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
 
     public List<boolean[]> getHistory () {
         return history;
+    }
+
+    public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight) {
+        int marioX = 11;
+        int marioY = 11;
+        byte[][] area = new byte[yHeight*2][xWidth*2+1];
+        byte[][] levelObservation = observation.getLevelSceneObservation();
+        int xLoc = 0;
+        int yLoc = 0;
+        for (int y = -yHeight; y < yHeight; y++) {
+            xLoc = 0;
+            for (int x = -xWidth; x <= xWidth; x++) {
+                System.out.printf("(lvlX, lvlY): (%d, %d)\n", marioX+x, marioY+y);
+                System.out.printf("(xLoc, yLoc): (%d, %d)\n", xLoc, yLoc);
+                System.out.printf("lvlObservation[marioY+y][marioX+x]: %d\n",levelObservation[marioY+y][marioX+x]);
+                area[yLoc][xLoc] = levelObservation[marioY+y][marioX+x];
+                System.out.printf("area[yLoc][xLoc] = %d\n", area[yLoc][xLoc]);
+                xLoc++;
+            }
+            yLoc++;
+        }
+        return area;
     }
 }

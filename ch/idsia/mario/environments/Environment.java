@@ -58,4 +58,7 @@ public interface Environment
 
     public String getBitmapLevelObservation();
 
+//    public byte[][] getAreaAroundMario(int xWidth, int yWidth);
+
+
 }
