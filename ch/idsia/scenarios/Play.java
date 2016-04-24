@@ -49,7 +49,7 @@ public class Play {
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
         options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelDifficulty(3);
+        options.setLevelDifficulty(69);
         task.setOptions(options);
 
         System.out.println ("Score: " + task.evaluate (options.getAgent())[0]);
