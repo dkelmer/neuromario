@@ -1,2 +1,8 @@
 - in toolsConfigurator changed line 339, 382, 395, 425, 433, 443, 449, 457, 467, 473, 479, 522
 - in toolsConfigurator commented out line 315
+- modify intellij working directory in run configurations
+- delete peter lawford
+- download jdom-1.1.3.jar (it's now in the project structure)
+- in CmdLineOptions change args.length > 1 to args.length >= 1 on line 37
+- delete erek. too fat. in competition and in out. (because of github)
+- evaluation options line 34: globaloptions.fps = 2;

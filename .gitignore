@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 .DS_Store
 .svn
 *.ipr
 *.iws
+=======
+*.DS_Store
+*.svn
+*.idea
+>>>>>>> d30b4a85252257c06fa5a0d7be24caebe96ff2b1

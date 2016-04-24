@@ -13,7 +13,7 @@
   </component>
   <component name="FacetManager">
     <facet type="Python" name="Python">
-      <configuration sdkName="Python 2.5.2" />
+      <configuration sdkName="" />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
@@ -34,7 +34,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Python 2.5.2 interpreter library" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
