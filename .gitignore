@@ -1,5 +1,5 @@
-.DS_Store
-.svn
+*.DS_Store
+*.svn
 *.ipr
 *.iws
-.idea
+*.idea
