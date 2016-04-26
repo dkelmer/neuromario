@@ -103,8 +103,53 @@ public class AStarAgent implements Agent
         
         if (sim.levelScene.verbose > 1) System.out.println("Returning action: " + sim.printAction(action));
         sim.timeBudget += 39 - (int)(System.currentTimeMillis() - startTime);
+
+		byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2);
+
+		for(int i = 0; i < lvlSceneObs.length; i++){
+			for(int j = 0; j < lvlSceneObs[0].length; j++) {
+				System.out.print(lvlSceneObs[i][j]);
+				System.out.print(" ");
+			}
+		}
+		System.out.print(",");
+		for(int i = 0; i < action.length; i++) {
+			if(action[i] == false){
+				System.out.print("-1");
+			}
+			else{
+				System.out.print("1");
+			}
+			if (i != action.length-1) {
+				System.out.print(" ");
+			}
+		}
+		System.out.println();
+
         return action;
     }
+
+	public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight) {
+		int marioX = 11;
+		int marioY = 11;
+		byte[][] area = new byte[yHeight*2][xWidth*2+1];
+		byte[][] levelObservation = observation.getMergedObservationZ(1,0);
+		int xLoc = 0;
+		int yLoc = 0;
+		for (int y = -yHeight; y < yHeight; y++) {
+			xLoc = 0;
+			for (int x = -xWidth; x <= xWidth; x++) {
+//                System.out.printf("(lvlX, lvlY): (%d, %d)\n", marioX+x, marioY+y);
+//                System.out.printf("(xLoc, yLoc): (%d, %d)\n", xLoc, yLoc);
+//                System.out.printf("lvlObservation[marioY+y][marioX+x]: %d\n",levelObservation[marioY+y][marioX+x]);
+				area[yLoc][xLoc] = levelObservation[marioY+y][marioX+x];
+//                System.out.printf("area[yLoc][xLoc] = %d\n", area[yLoc][xLoc]);
+				xLoc++;
+			}
+			yLoc++;
+		}
+		return area;
+	}
 
     public AGENT_TYPE getType()
     {
