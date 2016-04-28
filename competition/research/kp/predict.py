@@ -14,8 +14,9 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.utils import np_utils
 
 nb_classes = 5
-#  test = "0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -10 -10 -10 -10 -10 -10"
-trace = sys.argv[1]
+test = "0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -10 -10 -10 -10 -10 -10"
+#trace = sys.argv[1]
+trace = test
 x = np.array(trace.split(), dtype = int)
 x = x.reshape(28,1)
 x = x.transpose()

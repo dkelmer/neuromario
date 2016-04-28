@@ -3,7 +3,9 @@ package competition.research.kp;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardLayer;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardNetwork;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.train.Train;
+import com.heatonresearch.book.introneuralnet.neural.feedforward.train.anneal.NeuralSimulatedAnnealing;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.train.backpropagation.Backpropagation;
+import com.heatonresearch.book.introneuralnet.neural.feedforward.train.genetic.TrainingSetNeuralGeneticAlgorithm;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -38,6 +40,7 @@ public class KPTrainer {
             actual.add(doubles);
 
         }
+        reader.close();
 
         reader = new BufferedReader(new FileReader("competition/research/kp/traces/01ideal.txt"));
 
@@ -54,6 +57,7 @@ public class KPTrainer {
             }
             ideal.add(doubles);
         }
+        reader.close();
 
         double[][] actualArr = new double[actual.size()][actual.get(0).length];
         double[][] idealArr = new double[ideal.size()][ideal.get(0).length];
@@ -71,7 +75,10 @@ public class KPTrainer {
         network.addLayer(new FeedforwardLayer(16));
         network.addLayer(new FeedforwardLayer(5));
         network.reset();
-        final Train train = new Backpropagation(network, actualArr, idealArr, 0.7, 0.9);
+        //final Train train = new Backpropagation(network, actualArr, idealArr, 0.7, 0.9);
+        final NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(network, actualArr, idealArr, 10,2,100);
+        //final TrainingSetNeuralGeneticAlgorithm train = new TrainingSetNeuralGeneticAlgorithm(network, true, actualArr,
+             //   idealArr, 500, 0.1, 0.25);
         int epoch = 1;
         do {
             train.iteration();
