@@ -27,17 +27,26 @@ public class KPAgentTCP implements Agent {
     public void reset() {}
 
     public boolean[] getAction(Environment observation) {
-        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2);
-        byte[] message = new byte[lvlSceneObs.length + lvlSceneObs[0].length];
+        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
+        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
+        byte[] message = new byte[lvlSceneObs.length + lvlSceneObs[0].length + enemySceneObs.length + enemySceneObs[0].length];
         String world = "";
         String response = "";
 
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
                 world = world + " " + (lvlSceneObs[i][j]);
-                message[i+j] = lvlSceneObs[i][j];
+                //message[i+j] = lvlSceneObs[i][j];
             }
         }
+        for(int i = 0; i < enemySceneObs.length; i++){
+            for(int j = 0; j < enemySceneObs[0].length; j++) {
+                world = world + " " + (enemySceneObs[i][j]);
+                //message[i+j] = enemySceneObs[i][j];
+            }
+        }
+
+       // world += " 0 0 0 0 0 0 0 0 0";
         world += "\n";
         int len = world.length();
         boolean action[] = {false, false, false, false, false};
@@ -80,11 +89,17 @@ public class KPAgentTCP implements Agent {
     public void setName(String name) {
     }
 
-    public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight) {
+    public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight, int flag) {
         int marioX = 11;
         int marioY = 11;
         byte[][] area = new byte[yHeight*2][xWidth*2+1];
-        byte[][] levelObservation = observation.getMergedObservationZ(1,0);
+        byte[][] levelObservation;
+        if(flag == 1) {
+            levelObservation = observation.getLevelSceneObservationZ(1);
+        }
+        else {
+            levelObservation = observation.getEnemiesObservationZ(0);
+        }
         int xLoc = 0;
         int yLoc = 0;
         for (int y = -yHeight; y < yHeight; y++) {

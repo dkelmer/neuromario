@@ -39,18 +39,31 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     {
 
 
-        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2);
+        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
+        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
 
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
                 System.out.print(lvlSceneObs[i][j]);
-                System.out.print(",");
+                System.out.print(" ");
             }
         }
+        for(int i = 0; i < enemySceneObs.length; i++){
+            for(int j = 0; j < enemySceneObs[0].length; j++) {
+                System.out.print(enemySceneObs[i][j]);
+                System.out.print(" ");
+            }
+        }
+        System.out.print(",");
         for(int i = 0; i < Action.length; i++) {
-            System.out.print(Action[i]);
+            if(Action[i] == false){
+                System.out.print("-1");
+            }
+            else{
+                System.out.print("1");
+            }
             if (i != Action.length-1) {
-                System.out.print(",");
+                System.out.print(" ");
             }
         }
         System.out.println();
@@ -102,11 +115,17 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         return history;
     }
 
-    public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight) {
+    public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight, int flag) {
         int marioX = 11;
         int marioY = 11;
         byte[][] area = new byte[yHeight*2][xWidth*2+1];
-        byte[][] levelObservation = observation.getMergedObservationZ(1,0);
+        byte[][] levelObservation;
+        if(flag == 1) {
+            levelObservation = observation.getLevelSceneObservationZ(1);
+        }
+        else {
+            levelObservation = observation.getEnemiesObservationZ(1);
+        }
         int xLoc = 0;
         int yLoc = 0;
         for (int y = -yHeight; y < yHeight; y++) {

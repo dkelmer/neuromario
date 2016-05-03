@@ -17,21 +17,22 @@ print "Server listening on port 2016"
 test = "0 1 0 0 1"
 print "Loading neural net from file..."
 nb_classes = 5
-net = model_from_json(open('/Users/giorgio/projects/neuromario/competition/research/kp/astar_arch.json').read())
-net.load_weights('/Users/giorgio/projects/neuromario/competition/research/kp/astar_weights.h5')
+net = model_from_json(open('/Users/giorgio/projects/neuromario/competition/research/kp/giorgiohinge_net.json').read())
+net.load_weights('/Users/giorgio/projects/neuromario/competition/research/kp/giorgiohinge_weights.h5')
 net.compile(loss = 'mse', optimizer = RMSprop(), metrics = ['accuracy'])
 print "Neural net loaded and ready to go"
 
 try:
   while True:
     connection,client_address = sock.accept()
-    data = connection.recv(128)
+    data = connection.recv(512)
     x = np.array(data.split(), dtype = int)
-    x = x.reshape(28,1)
+    print data
+    x = x.reshape(56,1)
     x = x.transpose()
     y = net.predict_on_batch(x)[0]
     moves = [1 if z > 0 else -1 for z in y]
-
+    #moves
     response = " ".join(map(str,moves))
     if data:
       connection.sendall(response + "\n")
