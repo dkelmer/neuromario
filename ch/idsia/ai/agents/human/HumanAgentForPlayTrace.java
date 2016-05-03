@@ -22,6 +22,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     List<boolean[]> history = new ArrayList<boolean[]>();
     private boolean[] Action = null;
     private String Name = "HumanKeyboardAgent";
+    int directionFacing = 1; //means he's facing right
 
     public HumanAgentForPlayTrace()
     {
@@ -38,6 +39,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     public boolean[] getAction(Environment observation)
     {
 
+        float distToEnemy = getDistToClosestEnemy(observation);
 
         byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
         byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
@@ -54,6 +56,29 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
                 System.out.print(" ");
             }
         }
+
+        if (observation.canShoot()) {
+            System.out.print("1 ");
+        } else {
+            System.out.print("-1 ");
+        }
+
+        if (observation.isMarioCarrying()) {
+            System.out.print("1 ");
+        } else {
+            System.out.print("-1 ");
+        }
+
+        if (observation.isMarioOnGround()) {
+            System.out.print("1 ");
+        } else {
+            System.out.print("-1 ");
+        }
+
+        System.out.print(directionFacing + " ");
+
+        System.out.print(distToEnemy);
+
         System.out.print(",");
         for(int i = 0; i < Action.length; i++) {
             if(Action[i] == false){
@@ -66,6 +91,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
                 System.out.print(" ");
             }
         }
+
         System.out.println();
 
         return Action;
@@ -77,7 +103,6 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
 
     public void setName(String name) {        Name = name;    }
 
-
     public void keyPressed (KeyEvent e)
     {
         toggleKey(e.getKeyCode(), true);
@@ -88,15 +113,21 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         toggleKey(e.getKeyCode(), false);
     }
 
-
-    private void toggleKey(int keyCode, boolean isPressed)
-    {
+    private void toggleKey(int keyCode, boolean isPressed) {
         switch (keyCode) {
             case KeyEvent.VK_LEFT:
                 Action[Mario.KEY_LEFT] = isPressed;
+                if (directionFacing == 1) {
+                    directionFacing = -1;
+                    System.out.println("switched dir");
+                }
                 break;
             case KeyEvent.VK_RIGHT:
                 Action[Mario.KEY_RIGHT] = isPressed;
+                if (directionFacing == -1) {
+                    System.out.println("switched dir");
+                    directionFacing = 1;
+                }
                 break;
             case KeyEvent.VK_DOWN:
                 Action[Mario.KEY_DOWN] = isPressed;
@@ -141,5 +172,24 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
             yLoc++;
         }
         return area;
+    }
+
+    public float getDistToClosestEnemy(Environment observation) {
+        float[] enemies = observation.getEnemiesFloatPos();
+        float[] mario = observation.getMarioFloatPos();
+        if (enemies.length == 0) {
+            return 500.0f; //definitely v far away (about length of screen * 1.5)
+        } else {
+            float closestEnemyX = enemies[1];
+            float closestEnemyY = enemies[2];
+//            System.out.println("enemyY: " + closestEnemyY);
+//            System.out.println("marioY: " + mario[1]);
+            if (Math.abs(closestEnemyY - mario[1]) < 5) {
+                return mario[0] - closestEnemyX;
+            } else {
+                return 222.0f; //this is maybe bad, want to say it's on screen but
+                                // not on same y level so picked an arbitrary number...
+            }
+        }
     }
 }
