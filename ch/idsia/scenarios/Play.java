@@ -49,7 +49,7 @@ public class Play {
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
      //   options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelRandSeed(10); //60 oka
+        options.setLevelRandSeed(11); //10 is the def
         options.setLevelDifficulty(1);
         task.setOptions(options);
 

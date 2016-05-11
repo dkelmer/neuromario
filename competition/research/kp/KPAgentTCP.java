@@ -74,7 +74,7 @@ public class KPAgentTCP implements Agent {
 
         world += distToEnemy;
 
-        world += " 0 0 0 0";
+       // world += " 0 0 0 0";
         world += "\n";
         int len = world.length();
         boolean action[] = {false, false, false, false, false};
