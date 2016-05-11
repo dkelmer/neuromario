@@ -36,7 +36,7 @@ public class CmdLineOptions extends EvaluationOptions
         super();
         if (args.length >= 1 && !args[0].startsWith("-") /*starts with a path to agent then*/)
         {
-            System.out.println("got agent: " + args[0]);
+          //  System.out.println("got agent: " + args[0]);
             this.setAgent(args[0]);
 
             String[] shiftedargs = new String[args.length - 1];

@@ -149,7 +149,7 @@ public class KPAgentTCP implements Agent {
         float[] enemies = observation.getEnemiesFloatPos();
         float[] mario = observation.getMarioFloatPos();
         if (enemies.length == 0) {
-            return 500.0f; //definitely v far away (about length of screen * 1.5)
+            return 0f; //definitely v far away (about length of screen * 1.5)
         } else {
             float closestEnemyX = enemies[1];
             float closestEnemyY = enemies[2];

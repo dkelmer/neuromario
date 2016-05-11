@@ -42,8 +42,8 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         float distToEnemy = getDistToClosestEnemy(observation);
         float distToGap = getDistToGap(observation);
 
-        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
-        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
+        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 4, 1);
+        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 4, 0);
 
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
@@ -58,31 +58,31 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
             }
         }
 
-        if (observation.canShoot()) {
-            System.out.print("1 ");
-        } else {
-            System.out.print("-1 ");
-        }
-
-        if (observation.isMarioCarrying()) {
-            System.out.print("1 ");
-        } else {
-            System.out.print("-1 ");
-        }
-
-        if (observation.isMarioOnGround()) {
-            System.out.print("1 ");
-        } else {
-            System.out.print("-1 ");
-        }
-
-        System.out.print(directionFacing + " ");
-
-        System.out.print(distToEnemy + " ");
-
-        System.out.print(distToGap + " ");
-
-        System.out.println(observation.getMarioMode());
+//        if (observation.canShoot()) {
+//            System.out.print("1 ");
+//        } else {
+//            System.out.print("-1 ");
+//        }
+//
+//        if (observation.isMarioCarrying()) {
+//            System.out.print("1 ");
+//        } else {
+//            System.out.print("-1 ");
+//        }
+//
+//        if (observation.isMarioOnGround()) {
+//            System.out.print("1 ");
+//        } else {
+//            System.out.print("-1 ");
+//        }
+//
+//        System.out.print(directionFacing + " ");
+//
+//        System.out.print(distToEnemy + " ");
+//
+//        System.out.print(distToGap + " ");
+//
+//        System.out.print(observation.getMarioMode());
 
         System.out.print(",");
         for(int i = 0; i < Action.length; i++) {
@@ -124,13 +124,13 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
                 Action[Mario.KEY_LEFT] = isPressed;
                 if (directionFacing == 1) {
                     directionFacing = -1;
-                    System.out.println("switched dir");
+                //    System.out.println("switched dir");
                 }
                 break;
             case KeyEvent.VK_RIGHT:
                 Action[Mario.KEY_RIGHT] = isPressed;
                 if (directionFacing == -1) {
-                    System.out.println("switched dir");
+              //      System.out.println("switched dir");
                     directionFacing = 1;
                 }
                 break;
@@ -154,6 +154,8 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight, int flag) {
         int marioX = 11;
         int marioY = 11;
+        int realX = xWidth*2+1;
+        int realY = yHeight*2;
         byte[][] area = new byte[yHeight*2][xWidth*2+1];
         byte[][] levelObservation;
         if(flag == 1) {
@@ -162,6 +164,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         else {
             levelObservation = observation.getEnemiesObservationZ(1);
         }
+        System.out.println("we suck at math: " + realX + ", " + realY );
         int xLoc = 0;
         int yLoc = 0;
         for (int y = -yHeight; y < yHeight; y++) {
@@ -183,7 +186,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         float[] enemies = observation.getEnemiesFloatPos();
         float[] mario = observation.getMarioFloatPos();
         if (enemies.length ==  0) {
-            return 500.0f; //definitely v far away (about length of screen * 1.5)
+            return 0f; //definitely v far away (about length of screen * 1.5)
         } else {
             for (int i = 2; i < enemies.length; i+=3) {
                 float closestEnemyX = enemies[i-1];
