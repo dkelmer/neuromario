@@ -40,6 +40,7 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     {
 
         float distToEnemy = getDistToClosestEnemy(observation);
+        float distToGap = getDistToGap(observation);
 
         byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
         byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
@@ -77,7 +78,11 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
 
         System.out.print(directionFacing + " ");
 
-        System.out.print(distToEnemy);
+        System.out.print(distToEnemy + " ");
+
+        System.out.print(distToGap + " ");
+
+        System.out.println(observation.getMarioMode());
 
         System.out.print(",");
         for(int i = 0; i < Action.length; i++) {
@@ -119,13 +124,13 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
                 Action[Mario.KEY_LEFT] = isPressed;
                 if (directionFacing == 1) {
                     directionFacing = -1;
-                  //  System.out.println("switched dir");
+                    System.out.println("switched dir");
                 }
                 break;
             case KeyEvent.VK_RIGHT:
                 Action[Mario.KEY_RIGHT] = isPressed;
                 if (directionFacing == -1) {
-               //     System.out.println("switched dir");
+                    System.out.println("switched dir");
                     directionFacing = 1;
                 }
                 break;
@@ -177,19 +182,58 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     public float getDistToClosestEnemy(Environment observation) {
         float[] enemies = observation.getEnemiesFloatPos();
         float[] mario = observation.getMarioFloatPos();
-        if (enemies.length == 0) {
+        if (enemies.length ==  0) {
             return 500.0f; //definitely v far away (about length of screen * 1.5)
         } else {
-            float closestEnemyX = enemies[1];
-            float closestEnemyY = enemies[2];
+            for (int i = 2; i < enemies.length; i+=3) {
+                float closestEnemyX = enemies[i-1];
+                float closestEnemyY = enemies[i];
 //            System.out.println("enemyY: " + closestEnemyY);
 //            System.out.println("marioY: " + mario[1]);
-            if (Math.abs(closestEnemyY - mario[1]) < 5) {
-                return mario[0] - closestEnemyX;
-            } else {
-                return 222.0f; //this is maybe bad, want to say it's on screen but
-                                // not on same y level so picked an arbitrary number...
+                if (Math.abs(closestEnemyY - mario[1]) < 5) {
+                    float xDistToEnemy = mario[0] - closestEnemyX;
+                    if (xDistToEnemy < 16) {
+                        return 1f;
+                    } else if (xDistToEnemy < 32) {
+                        return 0.66f;
+                    } else if (xDistToEnemy < 48) {
+                        return 0.33f;
+                    }
+                }
             }
         }
+        //none on my level
+        return 0f; //this is maybe bad, want to say it's on screen but
+        // not on same y level so picked an arbitrary number...
+
+    }
+
+    public float getDistToGap(Environment observation) {
+        int marioX = 11;
+        int marioY = 11;
+
+        byte[][] obs = observation.getLevelSceneObservation();
+        boolean haveGap = true;
+        for (int j = 1; j < 4; j++) {
+            haveGap = true;
+            if (obs[marioY][marioX + j] == 0) {
+                for (int i = 1; i < 10; i++) {
+                    if (obs[marioY + i][marioX + j] != 0) {
+                        haveGap = false;
+                        break;
+                    }
+                }
+                if (haveGap) {
+                    if (j == 1) {
+                        return 1f;
+                    } else if (j == 2) {
+                        return .66f;
+                    } else if (j == 3) {
+                        return .33f;
+                    }
+                }
+            }
+        }
+        return 0f;
     }
 }
