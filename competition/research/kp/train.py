@@ -1,6 +1,5 @@
 from __future__ import print_function
 import numpy as np
-from keras.utils.visualize_util import plot
 
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation
@@ -9,7 +8,7 @@ from keras.utils import np_utils
 
 batch_size = 16
 nb_classes = 5
-nb_epoch = 2000
+nb_epoch = 1000
 
 # read in features and targets
 features = np.loadtxt("traces/astar65F.txt")
@@ -34,12 +33,12 @@ print(targets.shape)
 nn = Sequential()
 nn.add(Dense(61, activation = 'sigmoid', input_dim = 61))
 nn.add(Dropout(0.2))
-#nn.add(Dense(35, activation = 'tanh'))
-#nn.add(Dropout(0.2))
-#nn.add(Dense(35, activation = 'tanh'))
-#nn.add(Dropout(0.2))
-#nn.add(Dense(35, activation = 'tanh'))
-#nn.add(Dropout(0.2))
+nn.add(Dense(35, activation = 'sigmoid'))
+nn.add(Dropout(0.2))
+nn.add(Dense(35, activation = 'sigmoid'))
+nn.add(Dropout(0.2))
+nn.add(Dense(35, activation = 'sigmoid'))
+nn.add(Dropout(0.2))
 nn.add(Dense(35, activation = 'sigmoid'))
 nn.add(Dropout(0.2))
 nn.add(Dense(5))
