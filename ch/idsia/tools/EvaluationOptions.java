@@ -63,7 +63,7 @@ public class EvaluationOptions extends SimulationOptions
     public void setMaxFPS(boolean isMaxFPS ) {
         setParameterValue("-maxFPS", s(isMaxFPS));
 //        GlobalOptions.FPS = (isMaxFPS()) ? GlobalOptions.InfiniteFPS : 24 ;
-        GlobalOptions.FPS = 24 ;
+        GlobalOptions.FPS = 12 ;
     }
 
     public Boolean isMaxFPS() {

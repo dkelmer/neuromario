@@ -7,13 +7,13 @@ from keras.layers.core import Dense, Dropout, Activation
 from keras.optimizers import SGD, Adam, RMSprop
 from keras.utils import np_utils
 
-batch_size = 32
+batch_size = 16
 nb_classes = 5
 nb_epoch = 2000
 
 # read in features and targets
-features = np.loadtxt("traces/giorgiorepF.txt")
-targets = np.loadtxt("traces/giorgiorepT.txt")
+features = np.loadtxt("traces/astar65F.txt")
+targets = np.loadtxt("traces/astar65T.txt")
 
 print(features.shape)
 print(targets.shape)
@@ -32,18 +32,20 @@ print(targets.shape)
 #Y_test = targets[train_sz:][:]
 
 nn = Sequential()
-nn.add(Dense(56, activation = 'tanh', input_dim = 56))
+nn.add(Dense(61, activation = 'sigmoid', input_dim = 61))
 nn.add(Dropout(0.2))
-nn.add(Dense(35, activation = 'tanh'))
+#nn.add(Dense(35, activation = 'tanh'))
+#nn.add(Dropout(0.2))
+#nn.add(Dense(35, activation = 'tanh'))
+#nn.add(Dropout(0.2))
+#nn.add(Dense(35, activation = 'tanh'))
+#nn.add(Dropout(0.2))
+nn.add(Dense(35, activation = 'sigmoid'))
 nn.add(Dropout(0.2))
-nn.add(Dense(35, activation = 'tanh'))
-nn.add(Dropout(0.2))
-nn.add(Dense(35, activation = 'tanh'))
-nn.add(Dropout(0.2))
-nn.add(Dense(5, activation = 'tanh'))
+nn.add(Dense(5))
 nn.summary()
 
-nn.compile(loss='hinge',
+nn.compile(loss='mse',
               optimizer=RMSprop(),
               metrics=['accuracy'])
 
@@ -56,6 +58,6 @@ print('Test score:', score[0])
 print('Test accuracy:', score[1])
 
 json_string = nn.to_json()
-open('giorgiorep_net.json', 'w').write(json_string)
-nn.save_weights('giorgiorep_weights.h5')
+open('65-1a_net.json', 'w').write(json_string)
+nn.save_weights('65-1a_weights.h5')
 

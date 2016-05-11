@@ -33,6 +33,8 @@ public class KPAgentTCP implements Agent {
         String world = "";
         String response = "";
 
+        /* Build observation of the world */
+
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
                 world = world + " " + (lvlSceneObs[i][j]);
@@ -46,7 +48,33 @@ public class KPAgentTCP implements Agent {
             }
         }
 
-       // world += " 0 0 0 0 0 0 0 0 0";
+        /* Misc. Values for Neural Net input */
+
+        if (observation.canShoot()) {
+            world += " 1";
+        } else {
+            world += " -1";
+        }
+
+        if (observation.isMarioCarrying()) {
+            world += " 1";
+        } else {
+            world += " -11";
+        }
+
+        if (observation.isMarioOnGround()) {
+            world += " 1";
+        } else {
+            world += " -1";
+        }
+
+        float distToEnemy = getDistToClosestEnemy(observation);
+
+        world += " 1 "; //hardwiring dir facing for now
+
+        world += distToEnemy;
+
+        world += " 0 0 0 0";
         world += "\n";
         int len = world.length();
         boolean action[] = {false, false, false, false, false};
@@ -115,5 +143,24 @@ public class KPAgentTCP implements Agent {
             yLoc++;
         }
         return area;
+    }
+
+    public float getDistToClosestEnemy(Environment observation) {
+        float[] enemies = observation.getEnemiesFloatPos();
+        float[] mario = observation.getMarioFloatPos();
+        if (enemies.length == 0) {
+            return 500.0f; //definitely v far away (about length of screen * 1.5)
+        } else {
+            float closestEnemyX = enemies[1];
+            float closestEnemyY = enemies[2];
+//            System.out.println("enemyY: " + closestEnemyY);
+//            System.out.println("marioY: " + mario[1]);
+            if (Math.abs(closestEnemyY - mario[1]) < 5) {
+                return mario[0] - closestEnemyX;
+            } else {
+                return 222.0f; //this is maybe bad, want to say it's on screen but
+                // not on same y level so picked an arbitrary number...
+            }
+        }
     }
 }

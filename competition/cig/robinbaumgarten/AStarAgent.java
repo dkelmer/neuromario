@@ -119,6 +119,30 @@ public class AStarAgent implements Agent
 				System.out.print(" ");
 			}
 		}
+
+		if (observation.canShoot()) {
+			System.out.print("1 ");
+		} else {
+			System.out.print("-1 ");
+		}
+
+		if (observation.isMarioCarrying()) {
+			System.out.print("1 ");
+		} else {
+			System.out.print("-1 ");
+		}
+
+		if (observation.isMarioOnGround()) {
+			System.out.print("1 ");
+		} else {
+			System.out.print("-1 ");
+		}
+
+		System.out.print("1 ");
+
+		float distToEnemy = getDistToClosestEnemy(observation);
+		System.out.print(distToEnemy);
+
 		System.out.print(",");
 		for(int i = 0; i < action.length; i++) {
 			if(action[i] == false){
@@ -162,6 +186,25 @@ public class AStarAgent implements Agent
 			yLoc++;
 		}
 		return area;
+	}
+
+	public float getDistToClosestEnemy(Environment observation) {
+		float[] enemies = observation.getEnemiesFloatPos();
+		float[] mario = observation.getMarioFloatPos();
+		if (enemies.length == 0) {
+			return 500.0f; //definitely v far away (about length of screen * 1.5)
+		} else {
+			float closestEnemyX = enemies[1];
+			float closestEnemyY = enemies[2];
+//            System.out.println("enemyY: " + closestEnemyY);
+//            System.out.println("marioY: " + mario[1]);
+			if (Math.abs(closestEnemyY - mario[1]) < 5) {
+				return mario[0] - closestEnemyX;
+			} else {
+				return 222.0f; //this is maybe bad, want to say it's on screen but
+				// not on same y level so picked an arbitrary number...
+			}
+		}
 	}
 
     public AGENT_TYPE getType()

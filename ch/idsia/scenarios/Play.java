@@ -48,12 +48,12 @@ public class Play {
 //        options.setMaxFPS(false);
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
-//        options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelRandSeed(69);
-        options.setLevelDifficulty(3);
+     //   options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
+        options.setLevelRandSeed(10); //60 oka
+        options.setLevelDifficulty(1);
         task.setOptions(options);
 
-        System.out.println ("Score: " + task.evaluate (options.getAgent())[0]);
+        System.out.println("Score: " + task.evaluate (options.getAgent())[0]);
         System.out.println("Simulation/Play finished");       
     }
 }

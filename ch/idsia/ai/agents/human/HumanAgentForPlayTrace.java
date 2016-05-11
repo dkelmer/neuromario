@@ -119,13 +119,13 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
                 Action[Mario.KEY_LEFT] = isPressed;
                 if (directionFacing == 1) {
                     directionFacing = -1;
-                    System.out.println("switched dir");
+                  //  System.out.println("switched dir");
                 }
                 break;
             case KeyEvent.VK_RIGHT:
                 Action[Mario.KEY_RIGHT] = isPressed;
                 if (directionFacing == -1) {
-                    System.out.println("switched dir");
+               //     System.out.println("switched dir");
                     directionFacing = 1;
                 }
                 break;
