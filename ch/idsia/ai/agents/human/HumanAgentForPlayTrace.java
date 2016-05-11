@@ -23,6 +23,8 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     private boolean[] Action = null;
     private String Name = "HumanKeyboardAgent";
     int directionFacing = 1; //means he's facing right
+    public StringBuilder feature = new StringBuilder();
+    public StringBuilder target = new StringBuilder();
 
     public HumanAgentForPlayTrace()
     {
@@ -47,57 +49,60 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
 
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
-                System.out.print(lvlSceneObs[i][j]);
-                System.out.print(" ");
+                feature.append(lvlSceneObs[i][j]);
+                feature.append(" ");
             }
         }
         for(int i = 0; i < enemySceneObs.length; i++){
             for(int j = 0; j < enemySceneObs[0].length; j++) {
-                System.out.print(enemySceneObs[i][j]);
-                System.out.print(" ");
+                feature.append(enemySceneObs[i][j]);
+                feature.append(" ");
             }
         }
 
-//        if (observation.canShoot()) {
-//            System.out.print("1 ");
-//        } else {
-//            System.out.print("-1 ");
-//        }
-//
-//        if (observation.isMarioCarrying()) {
-//            System.out.print("1 ");
-//        } else {
-//            System.out.print("-1 ");
-//        }
-//
-//        if (observation.isMarioOnGround()) {
-//            System.out.print("1 ");
-//        } else {
-//            System.out.print("-1 ");
-//        }
-//
-//        System.out.print(directionFacing + " ");
-//
-//        System.out.print(distToEnemy + " ");
-//
-//        System.out.print(distToGap + " ");
-//
-//        System.out.print(observation.getMarioMode());
+        if (observation.canShoot()) {
+            feature.append("1 ");
+        } else {
+            feature.append("-1 ");
+        }
 
-        System.out.print(",");
+        if (observation.isMarioCarrying()) {
+            feature.append("1 ");
+        } else {
+            feature.append("-1 ");
+        }
+
+        if (observation.isMarioOnGround()) {
+            feature.append("1 ");
+        } else {
+            feature.append("-1 ");
+        }
+
+        feature.append(directionFacing + " ");
+
+        feature.append(distToEnemy + " ");
+
+        feature.append(distToGap + " ");
+
+        feature.append(observation.getMarioMode());
+
+        feature.append("\n");
+
+//        System.out.print(",");
         for(int i = 0; i < Action.length; i++) {
             if(Action[i] == false){
-                System.out.print("-1");
+                target.append("-1");
             }
             else{
-                System.out.print("1");
+                target.append("1");
             }
             if (i != Action.length-1) {
-                System.out.print(" ");
+                target.append(" ");
             }
         }
+        target.append("\n");
 
-        System.out.println();
+//        System.out.println();
 
         return Action;
     }
@@ -154,9 +159,8 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
     public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight, int flag) {
         int marioX = 11;
         int marioY = 11;
-        int realX = xWidth*2+1;
-        int realY = yHeight*2;
-        byte[][] area = new byte[yHeight*2][xWidth*2+1];
+
+        byte[][] area = new byte[yHeight*2][xWidth*2];
         byte[][] levelObservation;
         if(flag == 1) {
             levelObservation = observation.getLevelSceneObservationZ(1);
@@ -164,12 +168,12 @@ public class HumanAgentForPlayTrace extends KeyAdapter implements Agent
         else {
             levelObservation = observation.getEnemiesObservationZ(1);
         }
-        System.out.println("we suck at math: " + realX + ", " + realY );
+
         int xLoc = 0;
         int yLoc = 0;
         for (int y = -yHeight; y < yHeight; y++) {
             xLoc = 0;
-            for (int x = -xWidth; x <= xWidth; x++) {
+            for (int x = -xWidth; x < xWidth; x++) {
 //                System.out.printf("(lvlX, lvlY): (%d, %d)\n", marioX+x, marioY+y);
 //                System.out.printf("(xLoc, yLoc): (%d, %d)\n", xLoc, yLoc);
 //                System.out.printf("lvlObservation[marioY+y][marioX+x]: %d\n",levelObservation[marioY+y][marioX+x]);

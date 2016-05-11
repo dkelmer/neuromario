@@ -11,8 +11,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
-import org.python.util.PythonInterpreter;
-import org.python.core.*;
 import java.io.*;
 import java.net.*;
 

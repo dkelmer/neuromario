@@ -11,8 +11,8 @@ nb_classes = 5
 nb_epoch = 1000
 
 # read in features and targets
-features = np.loadtxt("traces/wesuckF.txt")
-targets = np.loadtxt("traces/wesuckT.txt")
+features = np.loadtxt("traces/103F.txt")
+targets = np.loadtxt("traces/103T.txt")
 
 print(features.shape)
 print(targets.shape)

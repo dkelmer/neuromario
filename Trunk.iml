@@ -43,16 +43,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../dl4j-0.4-examples" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../dl4j-0.4-examples/src/main/java" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>

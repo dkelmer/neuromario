@@ -1,9 +1,15 @@
 package ch.idsia.scenarios;
 
+import ch.idsia.ai.agents.human.HumanAgentForPlayTrace;
 import ch.idsia.ai.tasks.ProgressTask;
 import ch.idsia.ai.tasks.Task;
 import ch.idsia.tools.CmdLineOptions;
 import ch.idsia.tools.EvaluationOptions;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -46,11 +52,43 @@ public class Play {
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
      //   options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelRandSeed(11); //10 is the def
+        options.setLevelRandSeed(10); //10 is the def
         options.setLevelDifficulty(1);
         task.setOptions(options);
 
-        double thing = task.evaluate (options.getAgent())[0];
+        HumanAgentForPlayTrace agent = (HumanAgentForPlayTrace) options.getAgent();
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Starting game " + i);
+
+            double d = task.evaluate(options.getAgent())[0];
+
+            try {
+
+                File feature = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/features/humanF" + i);
+                File target = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/targets/humanT" + i);
+
+                // if file doesnt exists, then create it
+                //            if (!feature.exists()) {
+                //                feature.createNewFile();
+                //                target.createNewFile();
+                //            }
+
+                FileWriter featurefw = new FileWriter(feature.getAbsoluteFile());
+                BufferedWriter featurebw = new BufferedWriter(featurefw);
+                featurebw.write(agent.feature.toString());
+                featurebw.close();
+
+                FileWriter targetfw = new FileWriter(target.getAbsoluteFile());
+                BufferedWriter targetbw = new BufferedWriter(targetfw);
+                targetbw.write(agent.target.toString());
+                targetbw.close();
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
 //        System.out.println("Simulation/Play finished");
     }
 }
