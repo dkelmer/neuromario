@@ -5,6 +5,7 @@ import ch.idsia.ai.tasks.ProgressTask;
 import ch.idsia.ai.tasks.Task;
 import ch.idsia.tools.CmdLineOptions;
 import ch.idsia.tools.EvaluationOptions;
+import competition.cig.robinbaumgarten.AStarAgent;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -56,16 +57,18 @@ public class Play {
         options.setLevelDifficulty(1);
         task.setOptions(options);
 
-        HumanAgentForPlayTrace agent = (HumanAgentForPlayTrace) options.getAgent();
+        AStarAgent agent = (AStarAgent) options.getAgent();
         for (int i = 0; i < 20; i++) {
             System.out.println("Starting game " + i);
+            agent.feature = new StringBuilder();
+            agent.target = new StringBuilder();
 
             double d = task.evaluate(options.getAgent())[0];
 
             try {
 
-                File feature = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/features/humanF" + i);
-                File target = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/targets/humanT" + i);
+                File feature = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/features/astarF" + i);
+                File target = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/targets/astarT" + i);
 
                 // if file doesnt exists, then create it
                 //            if (!feature.exists()) {

@@ -12,8 +12,10 @@ nb_epoch = 1000
 num_hidden = 54
 
 # read in features and targets
-features = np.loadtxt("traces/features/humanFm")
-targets = np.loadtxt("traces/targets/humanTm")
+#features = np.loadtxt("traces/features/astarFm")
+#targets = np.loadtxt("traces/targets/astarTm")
+features = np.loadtxt("traces/features/humanF19")
+targets = np.loadtxt("traces/targets/humanT19")
 
 print(features.shape)
 print(targets.shape)
@@ -32,18 +34,18 @@ print(targets.shape)
 #Y_test = targets[train_sz:][:]
 
 nn = Sequential()
-nn.add(Dense(103, activation = 'sigmoid', input_dim = 103))
+nn.add(Dense(103, activation = 'tanh', input_dim = 103))
 nn.add(Dropout(0.2))
-nn.add(Dense(num_hidden, activation = 'sigmoid'))
+nn.add(Dense(num_hidden, activation = 'tanh'))
 nn.add(Dropout(0.2))
 #nn.add(Dense(num_hidden, activation = 'sigmoid'))
 #nn.add(Dropout(0.2))
 #nn.add(Dense(num_hidden, activation = 'sigmoid'))
 #nn.add(Dropout(0.2))
-nn.add(Dense(5, activation = 'sigmoid'))
+nn.add(Dense(5, activation = 'tanh'))
 nn.summary()
 
-nn.compile(loss='mse',
+nn.compile(loss='hinge',
               optimizer=RMSprop(),
               metrics=['accuracy'])
 
