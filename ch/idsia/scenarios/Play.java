@@ -47,51 +47,67 @@ public class Play {
 
 
 
+//        EvaluationOptions options = new CmdLineOptions(args);
+//        Task task = new ProgressTask(options);
+////        options.setMaxFPS(false);
+////        options.setVisualization(true);
+////        options.setNumberOfTrials(1);
+//     //   options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
+//
+//        options.setLevelDifficulty(1);
+//        task.setOptions(options);
+//
+//        HumanAgentForPlayTrace agent = (HumanAgentForPlayTrace) options.getAgent();
+
+//        for (int i = 0; i < 20; i++) {
+//            System.out.println("Starting game " + i + " with seed " + i%5);
+//            agent.feature = new StringBuilder();
+//            agent.target = new StringBuilder();
+//
+//            options.setLevelRandSeed(i%5); //10 is the def
+//
+//            double d = task.evaluate(options.getAgent())[0];
+//
+//            try {
+//
+//                File feature = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/features/human5level/5-humanF" + i);
+//                File target = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/targets/human5level/5-humanT" + i);
+//
+//                // if file doesnt exists, then create it
+//                //            if (!feature.exists()) {
+//                //                feature.createNewFile();
+//                //                target.createNewFile();
+//                //            }
+//
+//                FileWriter featurefw = new FileWriter(feature.getAbsoluteFile());
+//                BufferedWriter featurebw = new BufferedWriter(featurefw);
+//                featurebw.write(agent.feature.toString());
+//                featurebw.close();
+//
+//                FileWriter targetfw = new FileWriter(target.getAbsoluteFile());
+//                BufferedWriter targetbw = new BufferedWriter(targetfw);
+//                targetbw.write(agent.target.toString());
+//                targetbw.close();
+//
+//
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
+//        System.out.println("Simulation/Play finished");
+
         EvaluationOptions options = new CmdLineOptions(args);
         Task task = new ProgressTask(options);
 //        options.setMaxFPS(false);
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
-     //   options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelRandSeed(10); //10 is the def
+//        options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
+        options.setLevelRandSeed(10);
         options.setLevelDifficulty(1);
         task.setOptions(options);
 
-        AStarAgent agent = (AStarAgent) options.getAgent();
-        for (int i = 0; i < 20; i++) {
-            System.out.println("Starting game " + i);
-            agent.feature = new StringBuilder();
-            agent.target = new StringBuilder();
-
-            double d = task.evaluate(options.getAgent())[0];
-
-            try {
-
-                File feature = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/features/astarF" + i);
-                File target = new File("/Users/giorgio/projects/neuromario/competition/research/kp/traces/targets/astarT" + i);
-
-                // if file doesnt exists, then create it
-                //            if (!feature.exists()) {
-                //                feature.createNewFile();
-                //                target.createNewFile();
-                //            }
-
-                FileWriter featurefw = new FileWriter(feature.getAbsoluteFile());
-                BufferedWriter featurebw = new BufferedWriter(featurefw);
-                featurebw.write(agent.feature.toString());
-                featurebw.close();
-
-                FileWriter targetfw = new FileWriter(target.getAbsoluteFile());
-                BufferedWriter targetbw = new BufferedWriter(targetfw);
-                targetbw.write(agent.target.toString());
-                targetbw.close();
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-//        System.out.println("Simulation/Play finished");
+        System.out.println ("Score: " + task.evaluate (options.getAgent())[0]);
+        System.out.println("Simulation/Play finished");
     }
 }

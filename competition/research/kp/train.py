@@ -12,10 +12,10 @@ nb_epoch = 1000
 num_hidden = 54
 
 # read in features and targets
-#features = np.loadtxt("traces/features/astarFm")
-#targets = np.loadtxt("traces/targets/astarTm")
-features = np.loadtxt("traces/features/humanF19")
-targets = np.loadtxt("traces/targets/humanT19")
+features = np.loadtxt("traces/features/astar1level/astarFm")
+targets = np.loadtxt("traces/targets/astar1level/astarTm")
+#features = np.loadtxt("traces/features/human5level/5-humanFm")
+#targets = np.loadtxt("traces/targets/human5level/5-humanTm")
 
 print(features.shape)
 print(targets.shape)
@@ -35,17 +35,15 @@ print(targets.shape)
 
 nn = Sequential()
 nn.add(Dense(103, activation = 'tanh', input_dim = 103))
-nn.add(Dropout(0.2))
-nn.add(Dense(num_hidden, activation = 'tanh'))
-nn.add(Dropout(0.2))
-#nn.add(Dense(num_hidden, activation = 'sigmoid'))
 #nn.add(Dropout(0.2))
-#nn.add(Dense(num_hidden, activation = 'sigmoid'))
+nn.add(Dense(num_hidden, activation = 'tanh'))
+#nn.add(Dropout(0.2))
+nn.add(Dense(num_hidden, activation = 'tanh'))
 #nn.add(Dropout(0.2))
 nn.add(Dense(5, activation = 'tanh'))
 nn.summary()
 
-nn.compile(loss='hinge',
+nn.compile(loss='msle',
               optimizer=RMSprop(),
               metrics=['accuracy'])
 
@@ -58,6 +56,6 @@ print('Test score:', score[0])
 print('Test accuracy:', score[1])
 
 json_string = nn.to_json()
-open('human_net.json', 'w').write(json_string)
-nn.save_weights('human_weights.h5')
+open('astar1levelv2_net.json', 'w').write(json_string)
+nn.save_weights('astar1levelv2_weights.h5')
 

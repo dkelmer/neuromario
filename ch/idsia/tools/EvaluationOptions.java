@@ -31,7 +31,7 @@ public class EvaluationOptions extends SimulationOptions
             }
         GlobalOptions.VisualizationOn = isVisualization();
 //        GlobalOptions.FPS = (isMaxFPS()) ? GlobalOptions.InfiniteFPS : 24 /*GlobalOptions.FPS*/;
-        GlobalOptions.FPS = 24;
+        GlobalOptions.FPS = 1000;
         GlobalOptions.pauseWorld = isPauseWorld();
         GlobalOptions.PowerRestoration = isPowerRestoration();
         GlobalOptions.StopSimulationIfWin = isStopSimulationIfWin();

@@ -21,68 +21,70 @@ public class KPAgentTCP implements Agent {
     protected String name = "Kelmer&Pizzorni KPAgent";
     Socket socket;
     OutputStreamWriter osw;
+    int directionFacing = 1; //means he's facing right
+
 
     public void reset() {}
 
     public boolean[] getAction(Environment observation) {
-        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 2, 1);
-        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 2, 0);
-        byte[] message = new byte[lvlSceneObs.length + lvlSceneObs[0].length + enemySceneObs.length + enemySceneObs[0].length];
-        String world = "";
+        StringBuilder feature = new StringBuilder();
         String response = "";
 
-        /* Build observation of the world */
+        float distToEnemy = getDistToClosestEnemy(observation);
+        float distToGap = getDistToGap(observation);
+
+        byte[][] lvlSceneObs = getAreaAroundMario(observation, 3, 4, 1);
+        byte[][] enemySceneObs = getAreaAroundMario(observation, 3, 4, 0);
 
         for(int i = 0; i < lvlSceneObs.length; i++){
             for(int j = 0; j < lvlSceneObs[0].length; j++) {
-                world = world + " " + (lvlSceneObs[i][j]);
-                //message[i+j] = lvlSceneObs[i][j];
+                feature.append(lvlSceneObs[i][j]);
+                feature.append(" ");
             }
         }
         for(int i = 0; i < enemySceneObs.length; i++){
             for(int j = 0; j < enemySceneObs[0].length; j++) {
-                world = world + " " + (enemySceneObs[i][j]);
-                //message[i+j] = enemySceneObs[i][j];
+                feature.append(enemySceneObs[i][j]);
+                feature.append(" ");
             }
         }
 
-        /* Misc. Values for Neural Net input */
-
         if (observation.canShoot()) {
-            world += " 1";
+            feature.append("1 ");
         } else {
-            world += " -1";
+            feature.append("-1 ");
         }
 
         if (observation.isMarioCarrying()) {
-            world += " 1";
+            feature.append("1 ");
         } else {
-            world += " -11";
+            feature.append("-1 ");
         }
 
         if (observation.isMarioOnGround()) {
-            world += " 1";
+            feature.append("1 ");
         } else {
-            world += " -1";
+            feature.append("-1 ");
         }
 
-        float distToEnemy = getDistToClosestEnemy(observation);
+        feature.append(directionFacing + " ");
 
-        world += " 1 "; //hardwiring dir facing for now
+        feature.append(distToEnemy + " ");
 
-        world += distToEnemy;
+        feature.append(distToGap + " ");
 
-       // world += " 0 0 0 0";
-        world += "\n";
-        int len = world.length();
+        feature.append(observation.getMarioMode());
+
+        feature.append("\n");
+
         boolean action[] = {false, false, false, false, false};
         try {
             socket = new Socket("localhost", 2016);
-            socket.getOutputStream().write(world.getBytes("US-ASCII"));
+            socket.getOutputStream().write(feature.toString().getBytes("US-ASCII"));
             BufferedReader inFromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             response = inFromServer.readLine();
             System.out.println("Response: " + response);
-            socket.close();
+           // socket.close();
         }
         catch(Exception ignore){}
 
@@ -118,19 +120,21 @@ public class KPAgentTCP implements Agent {
     public byte[][] getAreaAroundMario(Environment observation, int xWidth, int yHeight, int flag) {
         int marioX = 11;
         int marioY = 11;
-        byte[][] area = new byte[yHeight*2][xWidth*2+1];
+
+        byte[][] area = new byte[yHeight*2][xWidth*2];
         byte[][] levelObservation;
         if(flag == 1) {
             levelObservation = observation.getLevelSceneObservationZ(1);
         }
         else {
-            levelObservation = observation.getEnemiesObservationZ(0);
+            levelObservation = observation.getEnemiesObservationZ(1);
         }
+
         int xLoc = 0;
         int yLoc = 0;
         for (int y = -yHeight; y < yHeight; y++) {
             xLoc = 0;
-            for (int x = -xWidth; x <= xWidth; x++) {
+            for (int x = -xWidth; x < xWidth; x++) {
 //                System.out.printf("(lvlX, lvlY): (%d, %d)\n", marioX+x, marioY+y);
 //                System.out.printf("(xLoc, yLoc): (%d, %d)\n", xLoc, yLoc);
 //                System.out.printf("lvlObservation[marioY+y][marioX+x]: %d\n",levelObservation[marioY+y][marioX+x]);
@@ -146,19 +150,58 @@ public class KPAgentTCP implements Agent {
     public float getDistToClosestEnemy(Environment observation) {
         float[] enemies = observation.getEnemiesFloatPos();
         float[] mario = observation.getMarioFloatPos();
-        if (enemies.length == 0) {
+        if (enemies.length ==  0) {
             return 0f; //definitely v far away (about length of screen * 1.5)
         } else {
-            float closestEnemyX = enemies[1];
-            float closestEnemyY = enemies[2];
+            for (int i = 2; i < enemies.length; i+=3) {
+                float closestEnemyX = enemies[i-1];
+                float closestEnemyY = enemies[i];
 //            System.out.println("enemyY: " + closestEnemyY);
 //            System.out.println("marioY: " + mario[1]);
-            if (Math.abs(closestEnemyY - mario[1]) < 5) {
-                return mario[0] - closestEnemyX;
-            } else {
-                return 222.0f; //this is maybe bad, want to say it's on screen but
-                // not on same y level so picked an arbitrary number...
+                if (Math.abs(closestEnemyY - mario[1]) < 5) {
+                    float xDistToEnemy = mario[0] - closestEnemyX;
+                    if (xDistToEnemy < 16) {
+                        return 1f;
+                    } else if (xDistToEnemy < 32) {
+                        return 0.66f;
+                    } else if (xDistToEnemy < 48) {
+                        return 0.33f;
+                    }
+                }
             }
         }
+        //none on my level
+        return 0f; //this is maybe bad, want to say it's on screen but
+        // not on same y level so picked an arbitrary number...
+
+    }
+
+    public float getDistToGap(Environment observation) {
+        int marioX = 11;
+        int marioY = 11;
+
+        byte[][] obs = observation.getLevelSceneObservation();
+        boolean haveGap = true;
+        for (int j = 1; j < 4; j++) {
+            haveGap = true;
+            if (obs[marioY][marioX + j] == 0) {
+                for (int i = 1; i < 10; i++) {
+                    if (obs[marioY + i][marioX + j] != 0) {
+                        haveGap = false;
+                        break;
+                    }
+                }
+                if (haveGap) {
+                    if (j == 1) {
+                        return 1f;
+                    } else if (j == 2) {
+                        return .66f;
+                    } else if (j == 3) {
+                        return .33f;
+                    }
+                }
+            }
+        }
+        return 0f;
     }
 }

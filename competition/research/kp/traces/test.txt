@@ -1,20 +1,3828 @@
-Starting game 0
-Starting game 1
-Starting game 2
-Starting game 3
-Starting game 4
-Starting game 5
-Starting game 6
-Starting game 7
-Starting game 8
-Starting game 9
-Starting game 10
-Starting game 11
-Starting game 12
-Starting game 13
-Starting game 14
-Starting game 15
-Starting game 16
-Starting game 17
-Starting game 18
-Starting game 19
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 -1 -1 1 1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 1 1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 -1 -1 1 1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:true
+Response: -1 -1 -1 1 1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:true
+Response: -1 -1 -1 1 1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:true
+Response: -1 -1 -1 1 -1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:false
+Response: -1 -1 -1 1 -1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 -1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 1 -1 1 -1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 1 1
+Action:false
+Action:true
+Action:false
+Action:true
+Action:true
+Response: -1 -1 -1 1 -1
+Action:false
+Action:false
+Action:false
+Action:true
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 -1 -1 -1 -1
+Action:false
+Action:false
+Action:false
+Action:false
+Action:false
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
+Response: -1 1 -1 -1 1
+Action:false
+Action:true
+Action:false
+Action:false
+Action:true
