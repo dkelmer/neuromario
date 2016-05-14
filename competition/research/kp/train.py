@@ -12,38 +12,20 @@ nb_epoch = 1000
 num_hidden = 54
 
 # read in features and targets
-features = np.loadtxt("traces/features/astar1level/astarFm")
-targets = np.loadtxt("traces/targets/astar1level/astarTm")
-#features = np.loadtxt("traces/features/human5level/5-humanFm")
-#targets = np.loadtxt("traces/targets/human5level/5-humanTm")
+features = np.loadtxt("traces/features/human1level/humanF19")
+targets = np.loadtxt("traces/targets/human1level/humanT19")
 
 print(features.shape)
 print(targets.shape)
 
-# split features into training and validation sets
-#val_sz = features.shape[0] // 5
-#train_sz = features.shape[0] - val_sz
-#X_train = features[:train_sz][:]
-#X_test = features[train_sz:][:]
-
-#print(X_train.shape[0], 'train samples')
-#print(X_test.shape[0], 'test samples')
-
-# split targets into training and validation sets
-#Y_train = targets[:train_sz][:]
-#Y_test = targets[train_sz:][:]
-
 nn = Sequential()
 nn.add(Dense(103, activation = 'tanh', input_dim = 103))
-#nn.add(Dropout(0.2))
 nn.add(Dense(num_hidden, activation = 'tanh'))
-#nn.add(Dropout(0.2))
 nn.add(Dense(num_hidden, activation = 'tanh'))
-#nn.add(Dropout(0.2))
 nn.add(Dense(5, activation = 'tanh'))
 nn.summary()
 
-nn.compile(loss='msle',
+nn.compile(loss='mse',
               optimizer=RMSprop(),
               metrics=['accuracy'])
 
@@ -56,6 +38,6 @@ print('Test score:', score[0])
 print('Test accuracy:', score[1])
 
 json_string = nn.to_json()
-open('astar1levelv2_net.json', 'w').write(json_string)
-nn.save_weights('astar1levelv2_weights.h5')
+open('h1m.json', 'w').write(json_string)
+nn.save_weights('h1m.h5')
 

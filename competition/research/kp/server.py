@@ -16,8 +16,8 @@ sock.listen(1)
 print "Server listening on port 2016"
 print "Loading neural net from file..."
 nb_classes = 5
-net = model_from_json(open('/Users/giorgio/projects/neuromario/competition/research/kp/human1level_net.json').read())
-net.load_weights('/Users/giorgio/projects/neuromario/competition/research/kp/human1level_weights.h5')
+net = model_from_json(open('a5m.json').read())
+net.load_weights('a5m.h5')
 net.compile(loss = 'mse', optimizer = RMSprop(), metrics = ['accuracy'])
 print "Neural net loaded and ready to go"
 
@@ -36,8 +36,8 @@ try:
     moves = [1 if z > 0 else -1 for z in y]
     #moves
     response = " ".join(map(str,moves))
-#    if count % 12 == 0:
-#      response = "0 0 0 0 0"
+    if count % 60 == 0:
+      response = "0 0 0 0 0"
     if data:
       connection.sendall(response + "\n")
     else:

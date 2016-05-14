@@ -103,7 +103,7 @@ public class Play {
 //        options.setVisualization(true);
 //        options.setNumberOfTrials(1);
 //        options.setLevelRandSeed((int) (Math.random () * Integer.MAX_VALUE));
-        options.setLevelRandSeed(10);
+        options.setLevelRandSeed(4);
         options.setLevelDifficulty(1);
         task.setOptions(options);
 
