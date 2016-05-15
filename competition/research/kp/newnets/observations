@@ -1,0 +1,113 @@
+observations
+
+merged1L (astar and human trained on level 10. took every other line of each trace)
+score: .024
+acc: .857
+
+level0: progresses decently well until about 40%. sometimes gets stuck in front of walls but then jumps a couple of times until it gets over. but on some iterations gets stuck at first tiny ledge that it needs to jump on top of. also suffers from totally stopping when getting stuck at a pipe. but at an earlier pipe it waited and then jumped. seems to exhibit more human behavior than astar behavior.
+
+level1: it learned to jump over the stone jump thing! but it falls into the hole. it knows to jump over green snail enemies. seems like he knows to adapt to situations. for example tries to run into a wall but when that doesn't succeed if the environment changes a bit (i.e. if an enemy enters moderately far away from him) he will try something new.
+
+level2: level starts with two pipes in a row and successfully clears them. but right after the first gap there is a low landing and a high landing. he lands on the low landing and can't get up on to the higher landing. only hits right. occasionally even falls into the hole. once he made it past the gap but very soon after got stuck in front of a tiny ledge. interesting note: takes different routes every time
+
+level3: most of the time gets stuck in front of the first pipe. once it made it past the pipe got a burst of astar type progression. at around 55% got stuck in front of a ledge. if he gets lucky he can stay on this sort of astar streak. once made it to about 80% but then got stuck in front of a ledge. seems like if he manages to make it to higher ground he makes it further. got to 80% 2 more times but can't get past that pipe.
+
+level4: about 10% in needs to jump up two ledges (stepped thing) and gets stuck every time. 
+
+level10: most of the time gets stuck in front of a ledge about 20% in. gets lucky and kills enemies up until this point. if it passes the ledge, it is pretty good at getting past the two piranhas either by killing them or waiting to proceed. but often gets stuck between the pipe and the next ledge. tries to jump over but doesn't jump high enough. 
+
+overall: seems to get bursts of astar behavior plus some human problem solving behavior but the human problem solving isn't always strong enough. also very bad once it's right up against a ledge. tries to run through it most of the time. 
+
+====================================
+
+merged5L (astar and human trained on levels 0-4. took every other line of each trace)
+score: .022
+acc: .927
+
+level0: bursts out in astar fashion. gets stuck in front of first pipe about 20% in. sometimes gets through first pipe and goes through another astar burst. but then gets stuck at second pipe 40% in. if makes it past second pipe it runs into a gap without jumping into it. on the times it makes it past the pipe it chills there for a moment and then makes the jump.
+ 
+level1: immediately at the beginning he needs to get on a ledge and jump over a gap. he often doesn't get on the ledge on the first try but tries again and then successfully clears the gap. but then he gets stuck in front of a ledge pretty soon after. occasionally clears it but then gets stuck in front of a pipe. tries to jump over it but doesn't jump high enough. 
+
+level2: clears two pipes in beg. then jumps over gap. but once loses fire power doesn't alway know what to do with enemies so he runs into them until he dies at around 40%. often falls into gap immediately after first two pipes. 
+
+level3: gets stuck in front of ledge/first pipe about 15% in. when it clears it gets stuck in ditch at 25%
+
+level4: starts off with astar like prowess but doesn't succeed and killing enemies and gets small. then gets stuck in ditch before the stone jump. can never clear the stone jump but consistently gets up to that point unlike other levels where he dies at different points. 
+
+level10: runs pretty fast, because of speed kills most enemies in the way. almost alawys gets up to double piranha pipes and waits until it can clear them very well but then consistnely falls into the gap right after them. ~50%
+
+====================================
+
+merged5m (astar and human trained on level 10. took every other line of each trace)
+score: .177
+acc: .962
+
+level0: gets stuck in front of ledge where pipe is on top 10% in every time.
+
+level1: most of the time falls into first gap 10% in. when it clears the gap it gets to be small because it runs into a green snail. then it gets to about 30% and it gets stuck in front of a ledge and then a green snail falls on him. 
+
+level2: jumps over both initial pipes and clears first gap. jumps over enemies. at 50% gets stuck in front of ledge thing. 
+
+level3: makes it to about 50% and then gets stuck in front of a ledge. there are lots of obstacles to jump over and he makes a number of attempts in front of each one until the last one where he gets stuck. 
+
+level4: gets stuck in ditch in front of stone jump at about 40%. is always small by time gets there. 
+
+level10: gets stuck immediately in front of first ledge. sucks.
+
+====================================
+
+merged1m (astar and human trained on level 10. took every other line of each trace)
+score: .185
+acc: .934
+
+level0: consistently gets stuck in front of 2nd ledge 10% in.
+
+level1: gets stuck in front of first ledge 10% in. doesn't even try to jump over it. 
+
+level2: gets stuck in front of first pipe <10% in. if you wait a very long time he will jump over first pipe and immediately get stuck in front of next pipe. 
+
+level3: gets stuck in front of first pipe 15% in. very rarely clears it but then gets stuck in front of ledge shortly after.
+
+level4: does very good job avoiding enemies but then gets stuck in the ditch before the rock jump at 40%
+
+level10: gets stuck in front of first ledge immediately. if it makes it past though it has a cool astar burst until the piranha pit. then it gets stuck without pushing any keys in front of the secon piranha. i think it is waiting for the piranha to come out and then retreat but the piranha isn't coming out
+
+overall: this guy seems to be particularly bad at jumping over obstacles. 
+
+====================================
+
+h1l-nostandstill (human trained on level10. removed all lines where human did nothing)
+score: .029
+acc: .837
+
+level0: at 15% gets stuck in front of pipe because he is hitting left and right at the same time. what. every time. 
+
+level1: falls into first ditch at 10% in every time. tries to get out of it but never can. 
+
+level2: gets stuck in front of first pipe immediately every time. sucks. 
+
+level3: gets stuck in front of first pipe it encounters at about 15%. does the hitting left and right thing here too. 
+
+level4: plays shockingly well compared to how it plays other levels. kills enemies, jumps up onto necessary ledges, goes pretty fast. but then falls into gap with the stones at 40%. 
+
+level10: performs far better on this level (which it wasn't trained on) than on 0-3. often makes it past piranha pipes by being careful. gets stuck in front of ledge at about 55%
+
+====================================
+
+h5l-nostandstill4times (human trained on levels 0-4. removed all lines where human did nothing. of those, took each unique line and copied it 4 times)
+score: .025
+acc: .770
+
+level0: seems to play in a very human like manner. runs at a human pace, seems to very closely resemble my style. tries to jump again if it fails. but falls into first ditch at 50%. doesn't jump far enough. 
+
+level1: same thing, looks very human: avoids some enemies, kills others. takes a varied path. often falls into first ditch 50% in. sometimes gets stuck in pipe one before piranha pipe. tries to jump but doesn't jump high enough. 
+
+level2: makes it pretty far - to about 60%. doesn't deal with enemies v well and so dies if it hits too many.
+
+level3: plays very well. cautious but assertive enough. falls into gap at 60%. when it clears the gap keeps going to about 80% also killing and avoiding enemies successfully. but then gets stuck in front of ledge. on some runs it gets stuck rather early at around 10%. 
+
+level4: gets stuck in put before the stone jump. then gets out of the pit but gets stuck on the stones. or falls into gap. 
+
+level10: gets to piranha pit pretty easily but gets stuck between last pipe and ledge. if he clears it he falls into the detch after the pit.
+
+overall: it feels like this guy is good. and pretty human like. i think that the merge may have had too much "conflicting" info with the astar perfection and human imperfection. but this one which is mostly sanitzed human data does well. i did a random 50/50 human/astar merge. maybe just taking both in their entirety would be better. 
